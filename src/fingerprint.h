@@ -9,11 +9,11 @@ struct FingerPrint {
 
   const int t1;
   const int f1;
-  double f1_estimate;
+  const double f1_estimate;
 
   const int t2;
   const int f2;
-  double f2_estimate;
+  const double f2_estimate;
 
   double energy;
 
