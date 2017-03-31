@@ -9,8 +9,6 @@
 
 namespace audio_recognition {
 
-using std::list;
-
 class StorageProvider {
  public:
   virtual int getFingerprintCount() = 0;
@@ -25,7 +23,7 @@ class StorageProvider {
 
   virtual AudioInfo getAuidioInfo(int id) = 0;
 
-  virtual list<QueryResult> getMatches(list<FingerPrint> fingerprints) = 0;
+  virtual std::list<QueryResult> getMatches(std::list<FingerPrint> fingerprints) = 0;
 };
 
 } // namespace audio_recognition
