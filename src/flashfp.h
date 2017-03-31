@@ -15,8 +15,7 @@ namespace audio_recognition {
 
 class FlashFP {
  public:
-  FlashFP(const Config* config, const StorageProvider* storage);
-
+  FlashFP(const Config* config, StorageProvider* storage);
   ~FlashFP();
 
   bool store(int id, AudioSource audioSource, AudioInfo info);
@@ -29,7 +28,7 @@ class FlashFP {
 
  private:
   const Config* config_;
-  const StorageProvider* storage_;
+  StorageProvider* storage_;
 
   list<FingerPrint> extractFingerprints(AudioSource source);
 };
