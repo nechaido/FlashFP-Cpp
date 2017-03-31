@@ -22,6 +22,7 @@ class FlashFP {
 
   AudioInfo getAudioDescription(int id);
 
+  std::list<QueryResult> match(AudioSource& audioSource);
   std::list<QueryResult> match(AudioSource& audioSource, int limit);
 
   bool contains(AudioInfo info);
