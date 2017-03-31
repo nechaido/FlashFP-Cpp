@@ -21,9 +21,7 @@ class StorageProvider {
 
   virtual bool contains(AudioInfo info) = 0;
 
-  virtual void addAudio(const int id,
-                        const AudioInfo* info,
-                        std::list<int> hashes) = 0;
+  virtual void addAudio(AudioInfo info, std::list<int> hashes) = 0;
 
   virtual AudioInfo getAuidioInfo(int id) = 0;
 

@@ -18,7 +18,7 @@ class FlashFP {
   FlashFP(const Config* config, StorageProvider* storage);
   ~FlashFP();
 
-  bool store(int id, AudioSource audioSource, AudioInfo info);
+  bool store(AudioSource& audioSource, AudioInfo info);
 
   AudioInfo getAudioDescription(int id);
 
