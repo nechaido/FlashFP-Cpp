@@ -22,7 +22,7 @@ class FlashFP {
 
   AudioInfo getAudioDescription(int id);
 
-  std::list<QueryResult> match(AudioSource audioSource, int limit);
+  std::list<QueryResult> match(AudioSource& audioSource, int limit);
 
   bool contains(AudioInfo info);
 
@@ -30,7 +30,7 @@ class FlashFP {
   const Config* config_;
   StorageProvider* storage_;
 
-  list<FingerPrint> extractFingerprints(AudioSource source);
+  std::list<FingerPrint> extractFingerprints(AudioSource& audioSource);
 };
 
 }  // namespace audio_recognition
