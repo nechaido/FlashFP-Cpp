@@ -5,8 +5,11 @@
 #ifndef FLASHFP_CPP_EVENTPOINT_H
 #define FLASHFP_CPP_EVENTPOINT_H
 
-class EventPoint {
-
+struct EventPoint {
+  int time;
+  int frequency;
+  float contrast;
+  float frequency_estimate;
 };
 
 #endif //FLASHFP_CPP_EVENTPOINT_H
