@@ -15,7 +15,7 @@ class EventPointProcessor {
 
   std::list<FingerPrint> getFingerprints(AudioSource& audioSource);
 
-  void reser();
+  void reset();
  private:
   const Config* config_;
 };
